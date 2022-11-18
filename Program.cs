@@ -20,7 +20,7 @@ IV (x > 0, y < 0)
 
 //Напишите программу, которая принимает на вход две координаты точки (x, y),
 //причем x и y не равны нулю 0 и выдает номер четверти плоскости, в которй находится эта точка.
-
+/*
 void Funkt( int x, int y)
 {
     if (x > 0 && y > 0)
@@ -30,7 +30,7 @@ void Funkt( int x, int y)
     else if (x < 0 && y < 0)
         Console.WriteLine("this point on 3st quater");
     else if (x > 0 && y < 0)
-        Console.WriteLine("this point on 2st quater");
+        Console.WriteLine("this point on 4st quater");
     else Console.WriteLine("its imposible at this task!");
 }
 
@@ -41,11 +41,11 @@ Console.WriteLine("Input your Y number: ");
 int yCoord = Convert.ToInt32(Console.ReadLine());
 
 Funkt(xCoord, yCoord);
-
+*/
 
 //Напишите программу, которая принимает на вход число (N) и 
 // выдаёт таблицу квадратов чисел от 1 до N. 5 -> 1, 4, 9, 16, 25. 2 -> 1,4
-/*
+
 void PssibleValue(int n)
 {
     if (n == 1)
@@ -63,7 +63,7 @@ int numQuater = Convert.ToInt32(Console.ReadLine());
 if (numQuater => 1 && numQater)
     PossibleValue(numQater);
 else Console.WriteLine ("its not number of quater!");
-*/
+
 //Напишите программу, которая принимает на вход координаты двух точек и
 //находит расстояние между ними в 2D пространстве.
 //A(x1, y1); B(x2, y2)
