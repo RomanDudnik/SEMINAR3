@@ -43,38 +43,49 @@ int yCoord = Convert.ToInt32(Console.ReadLine());
 Funkt(xCoord, yCoord);
 */
 
-//Напишите программу, которая принимает на вход число (N) и 
-// выдаёт таблицу квадратов чисел от 1 до N. 5 -> 1, 4, 9, 16, 25. 2 -> 1,4
+//Напишите программу, которая по заданному номеру четверти
+//показывает диапазон возможных координат точек в этой четверти (x, y).
 
-void PssibleValue(int n)
+/*
+void PossibleValue(int n)
 {
     if (n == 1)
         Console.WriteLine("1st quater X > 0, Y > 0");
-    else if (n ==2)
+    else if (n == 2)
         Console.WriteLine("2st quater X < 0, Y > 0");
-    else if (n ==2)
+    else if (n == 3)
         Console.WriteLine("3st quater X < 0, Y < 0");
-    else Console.WriteLine("4st quater X > 0, Y < 0");
+    else Console.WriteLine("4th quater X > 0, Y < 0");
 }
 
 Console.WriteLine("input number of quater: ");
 int numQuater = Convert.ToInt32(Console.ReadLine());
 
-if (numQuater => 1 && numQater)
-    PossibleValue(numQater);
+if (numQuater >= 1 && numQuater <= 4)
+    PossibleValue(numQuater);
 else Console.WriteLine ("its not number of quater!");
+*/
 
 //Напишите программу, которая принимает на вход координаты двух точек и
 //находит расстояние между ними в 2D пространстве.
 //A(x1, y1); B(x2, y2)
 //Math.Sqrt(num);
 
+//Вариант с методом №1
+/*
+double LongLine(int x1, int y1, int x2, int y2)
+{
+    double lenghtAB = Math.Sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));   //функция корень квадратный - Math.Sqrt(...)
+    return lenghtAB;
+}
+*/
+//Вариант с методом №2
 /*
 double LongLine(int x1, int y1, int x2, int y2)
 {
     int x = x2 - x1;
     int y = y2 - y1;
-    double lenghtAB = Math.Sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
+    double lenghtAB = Math.Round(Math.Sqrt(x*x + y*y), 3);   //функция корень квадратный - Math.Sqrt(...), функция Math.Round(..., 3) - для сокращения кол-ва цифр остатка
     return lenghtAB;
 }
 
