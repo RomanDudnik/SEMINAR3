@@ -87,7 +87,7 @@ void Qurd(int num)
         Console.Write($"{res} ");
         current ++;
     }
-    //Console.WriteLine("\b\b.");   //убирает два символа
+    Console.WriteLine("\b.");   //убирает символ в выводе в конце, ("\b\b.") - убирает два символа в конце и т.д.
 }
 
 Console.WriteLine("Input number: ");
