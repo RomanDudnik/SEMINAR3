@@ -1,6 +1,26 @@
-﻿//Напишите программу, которая принимает на вход две координаты точки (x, y),
+﻿/*
+           | y
+           |
+    II     |      I
+           |
+
+________________________x
+
+           |
+    III    |      IV
+           |
+           |
+
+
+I (x > 0; y > 0)
+II (x < 0, y > 0)
+III (x < 0, y < 0)
+IV (x > 0, y < 0)
+*/
+
+//Напишите программу, которая принимает на вход две координаты точки (x, y),
 //причем x и y не равны нулю 0 и выдает номер четверти плоскости, в которй находится эта точка.
-/*
+
 void Funkt( int x, int y)
 {
     if (x > 0 && y > 0)
@@ -15,13 +35,13 @@ void Funkt( int x, int y)
 }
 
 Console.WriteLine("Input your X number: ");
-int xCoord = Conver.ToInt32(Console.ReadLine());
+int xCoord = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Input your Y number: ");
-int yCoord = Conver.ToInt32(Console.ReadLine());
+int yCoord = Convert.ToInt32(Console.ReadLine());
 
 Funkt(xCoord, yCoord);
-*/
+
 
 //Напишите программу, которая принимает на вход число (N) и 
 // выдаёт таблицу квадратов чисел от 1 до N. 5 -> 1, 4, 9, 16, 25. 2 -> 1,4
@@ -77,7 +97,7 @@ Console.WriteLine($"Distanse AB is {dist}");
 //выдает таблицу квадратов чисел от 1 до N
 //5 -> 1, 4, 9, 16, 25
 //2 -> 1, 4
-
+/*
 void Qurd(int num)
 {
     int current = 1;
@@ -99,3 +119,4 @@ if (number >= 1)
     Qurd(number);
 }
 else Console.WriteLine("imposible number!");
+*/
